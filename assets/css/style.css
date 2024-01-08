@@ -53,7 +53,7 @@ h6 {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #1e1e1e;
-  border-top-color: #fff;
+  border-top-color: #d1f704;
   border-bottom-color: #fff;
   border-radius: 50%;
   width: 60px;
@@ -179,10 +179,14 @@ h6 {
 }
 
 .navbar a:hover,
-.navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
   color: #d1f704;
+  /* text-transform: uppercase; */
+  /* text-decoration: underline; */
+
+  /* .navbar .active */
+
 }
 
 .navbar .getstarted,
@@ -192,7 +196,7 @@ h6 {
   border-radius: 50px;
   color: #fff;
   font-size: 14px;
-  border: 2px solid #d1f704;
+  border: 1px solid #fff;
   font-weight: 600;
 }
 
@@ -894,7 +898,8 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background-color: #1e1e1e;
+  /* background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.jpg") fixed center center; */
   background-size: cover;
   padding: 120px 0;
 }
