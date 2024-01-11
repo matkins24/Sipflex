@@ -104,6 +104,10 @@ h6 {
   opacity: 1;
 }
 
+.bottom-btt {
+  background-color: #d1f704;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -133,7 +137,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -200,10 +204,15 @@ h6 {
   font-weight: 600;
 }
 
-#btn-login {
+#btn-free-trial {
   border-radius: 5px;
+  border: none;
   color: #1e1e1e;
   background-color: #d1f704;
+}
+
+#btn-free-trial:hover {
+  background-color: #fff;
 }
 
 .navbar .getstarted:hover,
@@ -211,6 +220,8 @@ h6 {
   color: #1e1e1e;
   background: #d1f704;
 }
+
+
 
 .navbar .dropdown ul {
   display: block;
@@ -396,7 +407,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
+  height: 75vh;
   background: #1e1e1e;
 }
 
@@ -462,6 +473,14 @@ h6 {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+#hero .hero-img {
+  text-align: center;
+}
+
+#hero .hero-img img {
+  width: 80%;
+}
+
 @media (max-width: 991px) {
   #hero {
     height: 100vh;
@@ -474,6 +493,7 @@ h6 {
 
   #hero .hero-img {
     text-align: center;
+
   }
 
   #hero .hero-img img {
@@ -579,6 +599,9 @@ section {
 .clients {
   padding: 12px 0;
   text-align: center;
+  /* background-color: #f8faf0; */
+  background-color: #fafafa;
+  height: 25vh;
 }
 
 .clients img {
@@ -597,6 +620,13 @@ section {
 @media (max-width: 768px) {
   .clients img {
     max-width: 40%;
+  }
+
+}
+
+@media (max-width: 991px) {
+  .clients {
+    height: 100%;
   }
 }
 
@@ -719,11 +749,16 @@ section {
 }
 
 .why-us .accordion-list span {
-  color: #d1f704;
+  color: #1e1e1e;
   font-weight: 600;
   font-size: 18px;
-  padding-right: 10px;
+  padding: 0 5px 0 5px;
+  border-radius: 5px;
+  align-items: center;
+  background-color: #d1f704;
+  margin-right: 5px;
 }
+
 
 .why-us .accordion-list i {
   font-size: 24px;
@@ -756,6 +791,7 @@ section {
 .why-us .accordion-list a.collapsed .icon-close {
   display: none;
 }
+
 
 @media (max-width: 1024px) {
 
@@ -864,7 +900,6 @@ section {
 }
 
 .services .icon-box .icon i {
-  color: #d1f704;
   font-size: 36px;
   transition: 0.3s;
 }
@@ -892,6 +927,38 @@ section {
 
 .services .icon-box:hover h4 a {
   color: #d1f704;
+}
+
+.color-red {
+  color: rgb(209, 82, 82);
+}
+
+.color-green {
+  color: rgb(0, 200, 200);
+}
+
+.color-blue {
+  color: rgb(81, 81, 252);
+}
+
+.color-yellow {
+  color: #F7BE00;
+}
+
+.color-orange {
+  color: orange;
+}
+
+.color-pink {
+  color: rgb(209, 3, 209);
+}
+
+.color-navy {
+  color: navy;
+}
+
+.color-cyan {
+  color: rgb(1, 209, 209);
 }
 
 /*--------------------------------------------------------------
@@ -931,6 +998,7 @@ section {
 .cta .cta-btn:hover {
   background: #d1f704;
   border: 2px solid #d1f704;
+  color: #1e1e1e;
 }
 
 @media (max-width: 1024px) {
@@ -1239,7 +1307,7 @@ section {
 }
 
 .pricing h4 span {
-  color: #d1f704;
+  color: #848484;
   font-size: 18px;
   display: block;
 }
@@ -1277,11 +1345,12 @@ section {
   text-decoration: line-through;
 }
 
-.pricing .buy-btn {
+.buy-btn {
   display: inline-block;
   padding: 12px 35px;
   border-radius: 50px;
-  color: #d1f704;
+  background-color: #d1f704;
+  color: #1e1e1e;
   transition: none;
   font-size: 16px;
   font-weight: 500;
@@ -1290,8 +1359,8 @@ section {
   border: 1px solid #d1f704;
 }
 
-.pricing .buy-btn:hover {
-  background: #d1f704;
+.buy-btn:hover {
+  background: #1e1e1e;
   color: #fff;
 }
 
@@ -1415,6 +1484,7 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
 .contact .info {
   border-top: 3px solid #d1f704;
   border-bottom: 3px solid #d1f704;
@@ -1426,11 +1496,11 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #d1f704;
+  color: #1e1e1e;
   float: left;
   width: 44px;
   height: 44px;
-  background: #e7f5fb;
+  background: #d1f704;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1450,7 +1520,7 @@ section {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #6182ba;
+  color: #848484;
 }
 
 .contact .info .email p {
@@ -1579,18 +1649,19 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+/* .contact .php-email-form button[type=submit] {
   background: #d1f704;
   border: 0;
   padding: 12px 34px;
-  color: #fff;
+  color: #1e1e1e;
   transition: 0.4s;
   border-radius: 50px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
   background: #d1f704;
-}
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+} */
 
 @keyframes animate-loading {
   0% {
@@ -1707,7 +1778,7 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: #fafafa;
 }
 
 #footer .footer-top .footer-contact {
@@ -1744,6 +1815,7 @@ section {
   margin-bottom: 30px;
 }
 
+
 #footer .footer-top .footer-links ul {
   list-style: none;
   padding: 0;
@@ -1752,7 +1824,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #d1f704;
+  color: #1e1e1e;
   font-size: 18px;
   line-height: 1;
 }
@@ -1768,7 +1840,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: #1e1e1e;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1779,11 +1851,11 @@ section {
   color: #d1f704;
 }
 
-#footer .footer-top .social-links a {
+#footer .footer-bottom .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #d1f704;
-  color: #fff;
+  color: #1e1e1e;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1794,8 +1866,21 @@ section {
   transition: 0.3s;
 }
 
-#footer .footer-top .social-links a:hover {
-  background: #d1f704;
+#footer .sipflex-logo img {
+  max-height: 40px;
+  margin-bottom: 10px;
+}
+
+#footer .footer-top .footer-links .tel2-logo img {
+  height: 65px;
+}
+
+#footer .footer-top .footer-links .hero-logo img {
+  margin-top: 10px;
+  height: 35px;
+}
+
+#footer .footer-bottom .social-links a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -1806,9 +1891,13 @@ section {
   color: #fff;
 }
 
-#footer .copyright {
-  float: left;
-}
+/* #footer .copyright {
+  float: l;
+} */
+
+/* #footer .social-links {
+  float: right;
+} */
 
 #footer .credits {
   float: right;
