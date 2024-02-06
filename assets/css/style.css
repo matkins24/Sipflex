@@ -206,13 +206,34 @@ h6 {
 
 #btn-free-trial {
   border-radius: 5px;
-  border: none;
+  border: 1px solid #d1f704;
   color: #1e1e1e;
   background-color: #d1f704;
 }
 
 #btn-free-trial:hover {
   background-color: #fff;
+  border: 1px solid #fff;
+}
+
+@media (max-width: 991px) {
+  #btn-login {
+    justify-content: center;
+    border: 1px black solid;
+  }
+  #btn-login:hover {
+    border: 1px #d1f704 solid;
+  }
+
+
+  #btn-free-trial {
+    justify-content: center;
+  }
+
+  #btn-free-trial:hover {
+    background-color: #d1f704;
+    border: 1px solid black;
+  }
 }
 
 .navbar .getstarted:hover,
@@ -2037,7 +2058,7 @@ section {
 }
 
 #email_section {
-  margin: 52.5px 0 50px 0;
+  margin: 52.5px 0 101.5px 0;
 }
 
 .personal-details{
@@ -2287,6 +2308,6 @@ section {
 }
 
 .signup-logo img {
-  max-height: 60px;
+  max-height: 40px;
   margin-bottom: 20px;
 }

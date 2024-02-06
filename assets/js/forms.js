@@ -63,9 +63,9 @@ if (planType != 'home' || planType != 'business' || planType != 'number') {
     planNumber = 1;
 }
 
-clickPlanButton(eval(planType)); // FIND ALTERNATIVE
-const planSelect = document.querySelector('#plan-choice');
-planSelect.options.selectedIndex = planNumber - 1;
+// clickPlanButton(eval(planType)); // FIND ALTERNATIVE
+// const planSelect = document.querySelector('#plan-choice');
+// planSelect.options.selectedIndex = planNumber - 1;
 
 
 // Function to change types 
@@ -85,17 +85,17 @@ function clickPlanButton(plan) {
 
 
 // Plan Select click events
-home.button.addEventListener('click', function () {
-    clickPlanButton(home);
-})
+// home.button.addEventListener('click', function () {
+//     clickPlanButton(home);
+// })
 
-business.button.addEventListener('click', function () {
-    clickPlanButton(business);
-})
+// business.button.addEventListener('click', function () {
+//     clickPlanButton(business);
+// })
 
-number.button.addEventListener('click', function () {
-    clickPlanButton(number);
-})
+// number.button.addEventListener('click', function () {
+//     clickPlanButton(number);
+// })
 
 
 
@@ -178,7 +178,7 @@ function printSummary() {
     <h4>Plan Summary</h4> \
     <table> \
     <tr> \
-        <td class="summary-label">Plan Name:<td/> <td>' + planChoice.value + '<td/> \
+        <td class="summary-label">Plan Name:<td/> <td>SIP Trunking Plan<td/> \
     <tr/> \
     <tr> \
         <td class="summary-label">Name: <td/> <td>' + firstNameInput.value + ' ' + lastNameInput.value + '<td/> \
@@ -543,7 +543,7 @@ passwordInput.addEventListener('change', function(){
         alertValid(this);
     } else {
         this.style.backgroundColor = '#ffc6c4';
-        alertBox[1].innerHTML = '<p>Password must contain at least:<ul><li>12 characters</li><li>one upper case letter</li><li>one lower case letter</li><li>one number</li><li>one special character</li></ul></p>'
+        alertBox[1].innerHTML = '<p>Password must contain at least:<ul><li>8 characters</li><li>one upper case letter</li><li>one lower case letter</li><li>one number</li><li>one special character</li></ul></p>'
     }
 })
 
