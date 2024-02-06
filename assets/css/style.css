@@ -1287,6 +1287,10 @@ section {
   border-radius: 5px;
 }
 
+.pricing p {
+  font-size: 18px;
+}
+
 .pricing h3 {
   font-weight: 500;
   margin-bottom: 15px;
@@ -1375,6 +1379,12 @@ section {
 
 .pricing .featured .buy-btn:hover {
   background: #23a3df;
+}
+
+.pricing-terms {
+  margin-top: 10px;
+  text-align: center;
+  color: #999;
 }
 
 @media (max-width: 992px) {
@@ -1872,12 +1882,12 @@ section {
 }
 
 #footer .footer-top .footer-links .tel2-logo img {
-  height: 65px;
+  height: 60px;
 }
 
 #footer .footer-top .footer-links .hero-logo img {
   margin-top: 10px;
-  height: 35px;
+  height: 30px;
 }
 
 #footer .footer-bottom .social-links a:hover {
@@ -1923,4 +1933,360 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+}
+
+/*--------------------------------------------------------------
+# Inner Pages
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Sign-up form
+--------------------------------------------------------------*/
+
+#main {
+  background-color: #f6f6f6;
+}
+.signup-container {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-page .signup-form {
+  text-align: center;
+  padding: 35px 45px 40px 45px;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 500px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 60px;
+}
+
+.sign-up-page .signup-form h1 {
+  margin-bottom: 30px;
+}
+
+.signup-title {
+  display: inline;
+}
+
+
+.home-buttons li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #1e1e1e;
+  margin-bottom: 5px;
+  /* transition: all 0.3s ease-in-out; */
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+.home-buttons li:hover,
+.filter-active {
+  color: #1e1e1e !important;
+  background: #d1f704;
+}
+
+.sign-up-page .signup-form input, select {
+  max-width: 600px;
+  min-width: 410px;
+  /* align-items: center; */
+  height: 40px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  opacity: 100%;
+  padding-left: 20px;
+}
+
+#country {
+  background-color: #f6f6f6;
+}
+
+/* .sign-up-page .signup-form .plan-select {
+  margin: 20px 0px 20px 0px;
+} */
+
+.sign-up-page .signup-form .plan-select select {
+  /* max-width: 400px; */
+  min-width: 410px;
+  height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 18px;
+  background-color: #f6f6f6;
+
+}
+
+.sign-up-page .signup-form .plan-select .home-buttons ul {
+  margin-bottom: 20px;
+  padding: 0px !important;
+}
+
+
+.plan-container p{
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#email_section {
+  margin: 52.5px 0 50px 0;
+}
+
+.personal-details{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
+}
+
+#form-summary {
+  text-align: left;
+}
+
+#form-summary .summary-label {
+  font-weight: bold;
+  min-width: 110px;
+}
+
+#terms_checkbox {
+  height: 14px;
+  min-width: 20px;
+}
+
+#terms_label {
+  height: 20px;
+  display: inline !important;
+  min-width: none;
+  font-size: 14px;
+  margin-bottom: 100px;
+}
+
+.alert-box {
+  color: #F55A4E;
+  display: inline-block;
+  width: 100%;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.all-buttons {
+  /* background-color: grey; */
+  min-width: 410px;
+  height: 45px;
+  border-radius: 5px;
+  display: inline-block;
+  align-items: center;
+  line-height: 45px
+}
+
+/* .step-2 #first_name {
+  min-width: 100px;
+  width: 180px;
+  margin-right: 10px;
+  display: inline;
+}
+
+.step-2 #last_name {
+  min-width: 50px;
+  display: inline;
+} */
+
+.step-2 .passwords {
+  margin: 40.5px 0 0 0;
+}
+
+.step-3 {
+  margin-bottom: 40px;
+}
+
+.step-3 #street_number {
+  min-width: 50px;
+  /* width: 100px; */
+  width: 99px;
+}
+
+.step-3 #street_name {
+  display: inline;
+  min-width: 150px;
+  /* width: 305px; */
+  width: 295px;
+  margin-left: 11px;
+}
+
+.step-3 #suburb {
+  min-width: 50px;
+  /* width: 100px; */
+  width: 278px;
+}
+
+/* .step-3 #city {
+  display: inline;
+  min-width: 50px;
+  width: 52%;
+  margin-left: 3%;
+} */
+
+.step-3 #postcode {
+  display: inline;
+  min-width: 50px;
+  width: 116px;
+  margin-left: 11px;
+}
+
+/* .step-3 #country {
+  display: inline;
+  min-width: 50px;
+  width: 66%;
+  margin-left: 3%;
+} */
+
+.step-3 .agent-code {
+  margin: 36.5px 0 30px 0;
+  background-color: #f6f6f6;
+}
+
+.step-3 .agent-code #agent_code {
+  margin: 30px;
+  min-width: 50px;
+  width: 300px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.step-4 h4 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.stepper-buttons {
+  width: 120px;
+  color: #1e1e1e;
+  background-color: #d1f704;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#stepper-next {
+  float: right;
+}
+
+#stepper-submit {
+  float: right;
+}
+
+#stepper-next:hover {
+  opacity: 80%;
+}
+
+#stepper-prev {
+  float: left;
+}
+
+#stepper-prev:hover {
+  opacity: 100%;
+}
+
+#stepper-icons .step-icon {
+  background-color: #d1f704 !important;
+}
+
+#stepper-steps {
+  display: inline;
+  line-height: 45px;
+}
+
+.hidden {
+  display: none;
+}
+
+.not-seen {
+  visibility: hidden;
+}
+
+
+#recaptcha-box {
+  margin: 15px 0 20px 0;
+  padding: 15px;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+}
+
+#recaptcha-box #captcha {
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border: solid 1px #d1f704;
+}
+
+#recaptcha-box #captcha-input {
+  display: inline-block;
+  min-width: 220px;
+  margin: 10px 0 3px 0;
+  text-align: center;
+  padding-left: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #d1f704;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+#recaptcha-box #captcha-input::placeholder {
+  font-weight: normal;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animated-check {
+  height: 10em;
+  width: 10em
+}
+
+.animated-check path {
+  fill: none;
+  stroke: #00A693;
+  stroke-width: 4;
+  stroke-dasharray: 23;
+  stroke-dashoffset: 23;
+  animation: draw 1s linear forwards;
+  stroke-linecap: round;
+  stroke-linejoin: round
+}
+
+@keyframes draw {
+  to {
+      stroke-dashoffset: 0
+  }
+}
+
+
+.signup-success {
+  padding: 20px 0 20px 0;
+}
+.signup-success p {
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.signup-success #email_confirmation {
+  color: #1e1e1e;
+  margin-bottom: 35px;
+}
+
+.signup-logo img {
+  max-height: 60px;
+  margin-bottom: 20px;
 }
